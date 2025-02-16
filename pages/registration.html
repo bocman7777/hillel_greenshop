@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <style>
+        @font-face {
+            font-family: "CeraPro";
+            src: url("../CeraPro-Regular.woff2") format("woff2");
+        }
+
+        body {
+            font-family: CeraPro, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 500px;
+            height: 656px;
+            background: #FFFFFF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-bottom: 10px solid #46A358;
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 16px;
+            left: 472px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+            outline: none;
+            color: transparent;
+            font-size: 0;
+        }
+
+        .close-btn::before,
+        .close-btn::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 18px;
+            background-color: #46A358;
+            top: 0;
+            left: 3px;
+        }
+
+        .close-btn::before { transform: rotate(45deg); }
+        .close-btn::after { transform: rotate(-45deg); }
+
+        .form-box {
+            margin-top: 40px;
+        }
+
+        .form-box h2 {
+            margin-top: 52px;
+            margin-bottom: 40px;
+            font-size: 20px;
+            line-height: 16px;
+        }
+
+        .form-box .inactive {
+            color: #3D3D3D;
+        }
+        .form-box .active {
+            color: #46A358;
+        }
+        .form-box .separator {
+            color: #3D3D3D;
+            margin-right: 10px;
+            margin-left: 12px;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        .form-box p {
+            font-family: CeraPro, sans-serif;
+            font-size: 13px;
+            line-height: 16px;
+            color: #3D3D3D;
+            margin-bottom: 6px;
+            padding-right: 40px;
+        }
+
+        .input-wrapper {
+            position: relative;
+            width: 300px;
+            margin-left: 93px;
+        }
+
+        .form-box input {
+            font-family: CeraPro, sans-serif;
+            width: 300px;
+            height: 40px;
+            padding-left: 14px;
+            margin: 8px;
+            border: 1px solid #EAEAEA;
+            border-radius: 5px;
+            font-size: 14px;
+            line-height: 16px;
+            box-sizing: border-box;
+
+        }
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        input::placeholder {
+            color: #A5A5A5;
+        }
+
+        .register-btn {
+            font-family: CeraPro, sans-serif;
+            width: 300px;
+            height: 45px;
+            background-color: #46A358;
+            color: white;
+            margin-top: 33px;
+            margin-bottom: 36px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        .divider {
+            font-family: CeraPro, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 27px;
+            color: #3D3D3D;
+            font-size: 13px;
+            line-height: 16px;
+        }
+        .divider::before {
+            content: "";
+            width: 95px;
+            height: 1px;
+            background-color: #EAEAEA;
+            margin-right: 6px;
+        }
+
+        .divider::after {
+            content: "";
+            width: 95px;
+            height: 1px;
+            background-color: #EAEAEA;
+            margin-left: 6px;
+        }
+
+        .google-btn, .facebook-btn {
+            font-family: CeraPro, sans-serif;
+            width: 300px;
+            height: 40px;
+            margin-bottom: 15px;
+            margin-left: 100px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            color: #727272;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .google-btn img, .facebook-btn img {
+            width: 18px;
+            height: 18px;
+        }
+
+    </style>
+</head>
+<body>
+<form class="container">
+    <button class="close-btn">&times;</button>
+    <div class="form-box">
+        <h2>
+            <span class="inactive">Login</span>
+            <span class="separator">|</span>
+            <span class="active">Register</span>
+        </h2>
+        <p>Enter your email and password to register.</p>
+        <div class="input-wrapper">
+            <input type="text" placeholder="Username" id="username" required>
+        </div>
+        <div class="input-wrapper">
+            <input type="email" placeholder="Enter your email address" id="email" required>
+        </div>
+        <div class="input-wrapper">
+            <input type="password" placeholder="Password" id="password" required>
+            <img class="icon" src="../images/icon-hide.svg" alt="Toggle visibility">
+        </div>
+        <div class="input-wrapper">
+            <input type="password" placeholder="Confirm Password" id="confirm_password" required>
+        </div>
+        <button class="register-btn">Register</button>
+        <div class="divider">Or register with</div>
+        <button class="google-btn">
+            <img src="../images/google.svg" alt="Google">
+            <span>Continue with Google</span>
+        </button>
+        <button class="facebook-btn">
+            <img src="../images/facebook.svg" alt="Facebook">
+            <span>Continue with Facebook</span>
+        </button>
+    </div>
+</form>
+</body>
+</html>
