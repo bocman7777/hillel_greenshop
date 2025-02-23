@@ -3,10 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
-
+    <title>Головна сторінка</title>
+    <link rel="stylesheet" href="./css/inline_block.css">
 </head>
 <body>
+    <form class="position_center">
 
+        <div class="header">
+            <img src="./images/logo.svg" alt="logo">
+
+            <div class="button_block">
+                <div class="button_home">
+                    <span>Home</span>
+                </div>
+
+                <div class="button_shop">
+                    <span>Shop</span>
+                </div>
+
+                <div class="button_plant_care">
+                    <span>Plant Care</span>
+                </div>
+
+                <div class="button_blogs">
+                    <span>Blogs</span>
+                </div>
+            </div>
+
+            <button class="button_login" onclick="location.href='./pages/registration.html'; return false;">
+                <img src="./images/Logout.svg" alt="login-icon">
+                <span>Login</span>
+
+            </button>
+        </div>
+
+        <div class="main_banner">
+            <img src="./images/Group.svg" alt="flowers">
+
+            <div class="main_banner_title">
+                <span>WELCOME TO GREENSHOP</span>
+            </div>
+
+            <div class="main_banner_text_one">
+                <span>LET'S MAKE A BETTER <span style="color: #46A358">PLANET</span></span>
+            </div>
+
+            <div class="main_banner_text_two">
+                <span>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</span>
+            </div>
+
+            <button class="main_banner_button">
+                <span>SHOP NOW</span>
+            </button>
+
+        </div>
+    </form>
 </body>
 </html>
