@@ -3,8 +3,9 @@
     src: url("../CeraPro-Regular.woff2") format("woff2");
 }
 
-*{
-    font-family: "CeraPro", sans-serif;
+@font-face {
+    font-family: "CeraProBlack";
+    src: url("../CeraPro-Black.woff2") format("woff2");
 }
 
 .position_center {
@@ -15,6 +16,7 @@
 }
 
 .header {
+    font-family: "CeraPro", sans-serif;
     display: inline-block;
     max-width: 100%;
     max-height: 100%;
@@ -30,6 +32,7 @@
 }
 
 .button_login {
+    font-family: "CeraPro", sans-serif;
     float: right;
     max-width: 100%;
     max-height: 100%;
@@ -102,6 +105,7 @@
 }
 
 .main_banner {
+    font-family: "CeraPro", sans-serif;
     display: inline-block;
     max-width: 100%;
     max-height: 100%;
@@ -127,6 +131,8 @@
 }
 
 .main_banner_text_one {
+    font-family: "CeraProBlack", sans-serif;
+    color: #3D3D3D;
     width: 530px;
     height: 140px;
     font-size: 70px;
@@ -163,3 +169,4 @@
     margin-top: 44px;
     float: left;
 }
+
