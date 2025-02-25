@@ -1,0 +1,354 @@
+@font-face {
+    font-family: "CeraPro";
+    src: url("../fonts/CeraPro-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "CeraProBlack";
+    src: url("../fonts/CeraPro-Black.woff2") format("woff2");
+}
+
+.position_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* homework 6.1 */
+
+.header {
+    font-family: "CeraPro", sans-serif;
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 1200px;
+    height: 53px;
+    margin-top: 30px;
+    background-color: transparent;
+    border-bottom: 0.3px solid #46A35880;
+    text-align: center;
+    img {
+        float: left;
+    }
+}
+
+.button_login {
+    font-family: "CeraPro", sans-serif;
+    float: right;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.button_block {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 400px;
+    height: 45px;
+    margin-top: 8px;
+}
+
+.button_home {
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    margin-right: 50px;
+    color: #3D3D3D;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.button_shop {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-right: 50px;
+    color: #3D3D3D;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.button_plant_care {
+    display: inline-block;
+    width: 85px;
+    height: 45px;
+    margin-right: 50px;
+    color: #3D3D3D;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.button_blogs {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    color: #3D3D3D;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.main_banner {
+    font-family: "CeraPro", sans-serif;
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 1200px;
+    height: 450px;
+    margin-top: 12px;
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+    img {
+        float: right;
+    }
+}
+
+.main_banner_title {
+    width: 205px;
+    height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 40px;
+    margin-top: 68px;
+    text-align: left;
+    color: #3D3D3D;
+}
+
+.main_banner_text_one {
+    font-family: "CeraProBlack", sans-serif;
+    color: #3D3D3D;
+    width: 530px;
+    height: 140px;
+    font-size: 70px;
+    line-height: 70px;
+    margin-left: 40px;
+    margin-top: 7px;
+    font-weight: 900;
+    text-align: left;
+}
+
+.main_banner_text_two {
+    width: 557px;
+    height: 45px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #727272;
+    text-align: left;
+    margin-left: 43px;
+    margin-top: 5px;
+}
+
+.main_banner_button {
+    width: 140px;
+    height: 40px;
+    border-radius: 6px;
+    background: #46A358;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    margin-left: 41px;
+    margin-top: 44px;
+    float: left;
+    cursor: pointer;
+}
+
+/* homework 7.1 */
+
+.main_box {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 1200px;
+    height: 1315px;
+    margin-top: 26px;
+}
+
+.main_box_category {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 310px;
+    height: 774px;
+    background-color: #FBFBFB;
+    float: left;
+}
+
+.main_box_category_title {
+    font-family: "CeraPro", sans-serif;
+    width: 93px;
+    height: 16px;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-top: 14px;
+    margin-left: 18px;
+    margin-bottom: 7px;
+    color: #3D3D3D;
+}
+
+.main_box_category_frame {
+    font-family: "CeraPro", sans-serif;
+    display: inline-block;
+    width: 103px;
+    height: 383px;
+    background-color: transparent;
+    margin-left: 30px;
+
+    span {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 40px;
+        cursor: pointer;
+        color: #3D3D3D;
+    }
+}
+
+.main_box_banner {
+    width: 310px;
+    height: 470px;
+    margin-top: 774px;
+    margin-left: 0px;
+}
+
+.main_box_sort {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 840px;
+    height: 23px;
+    float: right;
+}
+
+.main_box_sort_button {
+    float: left;
+    span {
+        font-family: "CeraPro", sans-serif;
+        height: 23px;
+        margin-right: 40px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 16px;
+        padding-bottom: 5px;
+        cursor: pointer;
+    }
+
+}
+
+.main_box_sort_by_button {
+    float: right;
+    span {
+        font-family: "CeraPro", sans-serif;
+        height: 23px;
+        margin-right: 5px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    img {
+        float: right;
+        margin-top: 3.5px;
+        height: 16px;
+        width: 16px;
+        cursor: pointer;
+    }
+}
+
+.main_box_select_pages {
+    font-family: "CeraPro", sans-serif;
+    display: inline-block;
+    width: 225px;
+    height: 35px;
+    margin-top: 90px;
+    float: right;
+
+    button {
+        font-family: "CeraPro", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 16px;
+        float: right;
+        width: 35px;
+        height: 35px;
+        border-radius: 4px;
+        border: 1px solid #E5E5E5;
+        background-color: transparent;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #3D3D3D;
+
+        img {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
+
+.main_box_products {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 70px;
+    column-gap: 33px;
+
+    max-width: 100%;
+    max-height: 100%;
+    width: 840px;
+    height: 1190px;
+    margin-top: 31px;
+    float: right;
+}
+
+.main_box_products_items {
+    width: 258px;
+    height: 350px;
+    font-family: "CeraPro", sans-serif;
+
+    image {
+        width: 250px;
+        height: 300px;
+    }
+
+}
+
+.main_box_products_item_title {
+    span {
+        color: #3D3D3D;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+}
+
+.main_box_products_item_title_price {
+    span {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        color: #46A358;
+    }
+}
