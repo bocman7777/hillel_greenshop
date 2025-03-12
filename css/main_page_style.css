@@ -590,90 +590,10 @@
 
 /*homework 10.1*/
 
-/*!* Стили dropdown *!*/
-/*.dropdown {*/
-/*    position: relative;*/
-/*}*/
-
-/*!* Элементы меню *!*/
-/*.dropdown-menu a {*/
-/*    padding: 10px 14px;*/
-/*    text-decoration: none;*/
-/*    color: #3D3D3D;*/
-/*    font-weight: 400;*/
-/*    font-size: 16px;*/
-/*    line-height: 100%;*/
-/*    display: block;*/
-/*    transition: background 0.3s ease;*/
-/*}*/
-
-/*!* Выпадающее меню *!*/
-/*.dropdown-menu {*/
-/*    font-family: "Encode Sans Expanded", sans-serif;*/
-/*    position: absolute;*/
-/*    top: 100%;*/
-/*    background: #EDF6EE;*/
-/*    width: 188px;*/
-/*    display: block;*/
-/*    opacity: 0;*/
-/*    visibility: hidden;*/
-/*    flex-direction: column;*/
-/*    margin-top: 13px;*/
-/*    margin-left: -56px;*/
-/*    transition: opacity 0.3s ease, visibility 0.3s ease;*/
-/*}*/
-
-/*.dropdown:hover .dropdown-menu {*/
-/*    opacity: 1;*/
-/*    visibility: visible;*/
-/*}*/
-
-/*!* Submenu *!*/
-/*.submenu {*/
-/*    position: relative;*/
-/*}*/
-
-/*.dropdown-submenu {*/
-/*    position: absolute;*/
-/*    left: 100%;*/
-/*    top: 0;*/
-/*    background: #DDEFE0;*/
-/*    width: 180px;*/
-/*    opacity: 0;*/
-/*    visibility: hidden;*/
-/*    transition: opacity 0.3s ease, visibility 0.3s ease;*/
-/*}*/
-
-/*.submenu:hover .dropdown-submenu {*/
-/*    opacity: 1;*/
-/*    visibility: visible;*/
-/*}*/
-
-/*!* Меняем Priming при наведении *!*/
-/*.priming {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    background: #4CAF50;*/
-/*    color: white;*/
-/*    font-weight: bold;*/
-/*    padding: 10px 14px;*/
-/*}*/
-
-/*.priming:hover {*/
-/*    background: #388E3C;*/
-/*}*/
-
-/*.priming:hover .arrow {*/
-/*    content: url('../images/Frame10.svg');*/
-/*}*/
-
-/* Стили dropdown */
 .dropdown {
     position: relative;
 }
 
-/* Элементы меню */
 .dropdown-menu a {
     padding: 10px 14px;
     text-decoration: none;
@@ -685,7 +605,6 @@
     transition: background 0.3s ease;
 }
 
-/* Выпадающее меню */
 .dropdown-menu {
     font-family: "Encode Sans Expanded", sans-serif;
     position: absolute;
@@ -701,18 +620,15 @@
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Показываем меню при наведении */
 .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
 }
 
-/* Submenu */
 .submenu {
     position: relative;
 }
 
-/* Второй уровень меню */
 .dropdown-submenu {
     position: absolute;
     left: 100%;
@@ -726,13 +642,11 @@
     margin-left: 2px;
 }
 
-/* Показываем подменю при наведении */
 .submenu:hover .dropdown-submenu {
     opacity: 1;
     visibility: visible;
 }
 
-/* Меняем Priming при наведении */
 .priming {
     display: flex;
     justify-content: space-between;
@@ -743,7 +657,6 @@
     position: relative;
 }
 
-/* Оставляем Priming активным при наведении на него или подменю */
 .priming:hover,
 .submenu:hover .priming {
     background: #1A712A;
@@ -754,7 +667,6 @@
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Меняем иконку при наведении */
 .priming:hover .arrow,
 .submenu:hover .priming .arrow {
     content: url('../images/Frame10.svg');
