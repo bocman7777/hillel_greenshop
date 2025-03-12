@@ -12,21 +12,37 @@
             <img src="./images/logo.svg" alt="logo">
 
             <div class="button_block">
-                <div class="button_home">
-                    <span>Home</span>
+                <input type="radio" id="home" name="nav" checked>
+                <label for="home" class="button_home">Home</label>
+
+                <input type="radio" id="shop" name="nav">
+                <label for="shop" class="button_shop">Shop</label>
+
+                <div class="dropdown">
+                    <input type="radio" id="plant_care" name="nav">
+                    <label for="plant_care" class="button_plant_care">Plant Care</label>
+                    <div class="dropdown-menu">
+                        <a href="#">Drainage</a>
+                        <a href="#">Fungicides</a>
+                        <a href="#">Fertilizer</a>
+                        <div class="submenu">
+                            <a href="#" class="priming">Priming
+                                <img src="./images/Frame9.svg" alt="frame" style=" width: 7px; height: 11px; float: right; padding-top: 3px; padding-right: 6px" class="arrow">
+                            </a>
+                            <div class="dropdown-submenu">
+                                <a href="#">Universal</a>
+                                <a href="#">For Ficus</a>
+                                <a href="#">For Cacti</a>
+                                <a href="#">For Citrus</a>
+                                <a href="#">For those in bloom</a>
+                                <a href="#">For Orchids</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="button_shop">
-                    <span>Shop</span>
-                </div>
-
-                <div class="button_plant_care">
-                    <span>Plant Care</span>
-                </div>
-
-                <div class="button_blogs">
-                    <span>Blogs</span>
-                </div>
+                <input type="radio" id="blogs" name="nav">
+                <label for="blogs" class="button_blogs">Blogs</label>
             </div>
 
             <button class="button_login" onclick="location.href='./pages/registration.html'; return false;">
