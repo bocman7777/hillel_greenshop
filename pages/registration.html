@@ -5,42 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="../css/registration_style.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Форма регистрации</title>
 </head>
 <body>
-<form class="container">
-    <button class="close-btn " onclick="window.history.back();">&times;</button>
-    <div class="form-box">
-        <h2>
-            <span class="inactive">Login</span>
-            <span class="separator">|</span>
-            <span class="active">Register</span>
-        </h2>
-        <p>Enter your email and password to register.</p>
-        <div class="input-wrapper">
-            <input type="text" placeholder="Username" id="username" required>
+<form class="body_registr">
+    <div class="container">
+        <button class="close-btn " onclick="window.history.back();">&times;</button>
+        <div class="form-box">
+            <h2>
+                <span class="inactive">Login</span>
+                <span class="separator">|</span>
+                <span class="active">Register</span>
+            </h2>
+            <p>Enter your email and password to register.</p>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Username" id="username" required>
+            </div>
+            <div class="input-wrapper">
+                <input type="email" placeholder="Enter your email address" id="email" required>
+            </div>
+            <div class="input-wrapper">
+                <input type="password" placeholder="Password" id="password" required>
+                <img class="icon" src="../images/hide.svg" alt="Toggle visibility">
+            </div>
+            <div class="input-wrapper">
+                <input type="password" placeholder="Confirm Password" id="confirm_password" required>
+            </div>
+            <button class="register-btn">Register</button>
+            <div class="divider">Or register with</div>
+            <button class="google-btn">
+                <img src="../images/google.svg" alt="Google">
+                <span>Continue with Google</span>
+            </button>
+            <button class="facebook-btn">
+                <img src="../images/facebook.svg" alt="Facebook">
+                <span>Continue with Facebook</span>
+            </button>
         </div>
-        <div class="input-wrapper">
-            <input type="email" placeholder="Enter your email address" id="email" required>
-        </div>
-        <div class="input-wrapper">
-            <input type="password" placeholder="Password" id="password" required>
-            <img class="icon" src="../images/hide.svg" alt="Toggle visibility">
-        </div>
-        <div class="input-wrapper">
-            <input type="password" placeholder="Confirm Password" id="confirm_password" required>
-        </div>
-        <button class="register-btn">Register</button>
-        <div class="divider">Or register with</div>
-        <button class="google-btn">
-            <img src="../images/google.svg" alt="Google">
-            <span>Continue with Google</span>
-        </button>
-        <button class="facebook-btn">
-            <img src="../images/facebook.svg" alt="Facebook">
-            <span>Continue with Facebook</span>
-        </button>
     </div>
 </form>
 </body>
