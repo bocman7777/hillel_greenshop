@@ -128,8 +128,8 @@ input::placeholder {
     height: 45px;
     background-color: #46A358;
     color: white;
-    margin-top: 33px;
-    margin-bottom: 36px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -146,7 +146,8 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 27px;
+    margin-top: 12px;
+    margin-bottom: 13px;
     color: #3D3D3D;
     font-size: 13px;
     line-height: 16px;
@@ -193,6 +194,95 @@ input::placeholder {
 .google-btn:hover,
 .facebook-btn:hover {
     background-color: rgb(251, 247, 247);
+}
+
+ .checkbox-wrapper-6 .tgl {
+     display: none;
+ }
+.checkbox-wrapper-6 .tgl,
+.checkbox-wrapper-6 .tgl:after,
+.checkbox-wrapper-6 .tgl:before,
+.checkbox-wrapper-6 .tgl *,
+.checkbox-wrapper-6 .tgl *:after,
+.checkbox-wrapper-6 .tgl *:before,
+.checkbox-wrapper-6 .tgl + .tgl-btn {
+    box-sizing: border-box;
+}
+.checkbox-wrapper-6 .tgl::-moz-selection,
+.checkbox-wrapper-6 .tgl:after::-moz-selection,
+.checkbox-wrapper-6 .tgl:before::-moz-selection,
+.checkbox-wrapper-6 .tgl *::-moz-selection,
+.checkbox-wrapper-6 .tgl *:after::-moz-selection,
+.checkbox-wrapper-6 .tgl *:before::-moz-selection,
+.checkbox-wrapper-6 .tgl + .tgl-btn::-moz-selection,
+.checkbox-wrapper-6 .tgl::selection,
+.checkbox-wrapper-6 .tgl:after::selection,
+.checkbox-wrapper-6 .tgl:before::selection,
+.checkbox-wrapper-6 .tgl *::selection,
+.checkbox-wrapper-6 .tgl *:after::selection,
+.checkbox-wrapper-6 .tgl *:before::selection,
+.checkbox-wrapper-6 .tgl + .tgl-btn::selection {
+    background: none;
+}
+.checkbox-wrapper-6 .tgl + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 2em;
+    height: 1em;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.checkbox-wrapper-6 .tgl + .tgl-btn:after,
+.checkbox-wrapper-6 .tgl + .tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+}
+.checkbox-wrapper-6 .tgl + .tgl-btn:after {
+    left: 0;
+}
+.checkbox-wrapper-6 .tgl + .tgl-btn:before {
+    display: none;
+}
+.checkbox-wrapper-6 .tgl:checked + .tgl-btn:after {
+    left: 50%;
+}
+
+.checkbox-wrapper-6 .tgl-light + .tgl-btn {
+    background: #f0f0f0;
+    border-radius: 2em;
+    padding: 2px;
+    transition: all 0.4s ease;
+}
+.checkbox-wrapper-6 .tgl-light + .tgl-btn:after {
+    border-radius: 50%;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+.checkbox-wrapper-6 .tgl-light:checked + .tgl-btn {
+    background: #46A358;
+}
+
+.checkbox-wrapper-6 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-text {
+    font-size: 10px;
+    color: #3D3D3D;
+    cursor: pointer;
+    line-height: 1em;
+    margin-bottom: 0.5em;
 }
 
 
@@ -1210,4 +1300,52 @@ input::placeholder {
     line-height: 30px;
     margin-top: 6px;
     color: #3D3D3D;
+}
+
+/*homework 13_1*/
+
+.preloader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeOut 0.5s ease-in-out 0.5s forwards;
+}
+.loader {
+    width: 50px;
+    aspect-ratio: 1.154;
+    position: relative;
+    background: conic-gradient(from 120deg at 50% 64%,#0000, #25b09b 1deg 120deg,#0000 121deg);
+    animation: l27-0 1.5s infinite cubic-bezier(0.3,1,0,1);
+}
+.loader:before,
+.loader:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    transform-origin: 50% 66%;
+    animation: l27-1 1.5s infinite;
+}
+.loader:after {
+    --s: -1;
+}
+@keyframes l27-0 {
+    0%,30% {transform: rotate(0)}
+    70% {transform: rotate(120deg)}
+    70.01%,100% {transform: rotate(360deg)}
+}
+@keyframes l27-1 {
+    0% {transform: rotate(calc(var(--s,1)*120deg)) translate(0)}
+    30%,70% {transform: rotate(calc(var(--s,1)*120deg)) translate(calc(var(--s,1)*-5px),10px)}
+    100% {transform: rotate(calc(var(--s,1)*120deg)) translate(0)}
+}
+@keyframes fadeOut {
+    100% { opacity: 0; visibility: hidden; }
 }

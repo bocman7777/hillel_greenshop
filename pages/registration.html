@@ -9,6 +9,9 @@
     <title>Форма регистрации</title>
 </head>
 <body>
+<div class="preloader-container">
+    <div class="loader"></div>
+</div>
 <form class="body_registr">
     <div class="container">
         <button class="close-btn " onclick="window.history.back();">&times;</button>
@@ -33,6 +36,19 @@
                 <input type="password" placeholder="Confirm Password" id="confirm_password" required>
             </div>
             <button class="register-btn">Register</button>
+
+            <div class="checkbox-wrapper-6">
+                <input class="tgl tgl-light" id="cb1" type="checkbox" required/>
+                <label class="tgl-btn" for="cb1"></label>
+                <span class="checkbox-text">By signing up you agree to Privacy Policy</span>
+            </div>
+
+            <div class="checkbox-wrapper-6">
+                <input class="tgl tgl-light" id="cb2" type="checkbox" required/>
+                <label class="tgl-btn" for="cb2"></label>
+                <span class="checkbox-text">Email me with news and updates</span>
+            </div>
+
             <div class="divider">Or register with</div>
             <button class="google-btn">
                 <img src="../images/google.svg" alt="Google">
@@ -45,5 +61,23 @@
         </div>
     </div>
 </form>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleIcons = document.querySelectorAll(".icon");
+
+        toggleIcons.forEach(icon => {
+            icon.addEventListener("click", function () {
+                const input = this.previousElementSibling;
+                if (input && input.type === "password") {
+                    input.type = "text";
+                    this.src = "../images/hide_hide.svg";
+                } else if (input) {
+                    input.type = "password";
+                    this.src = "../images/hide.svg";
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
